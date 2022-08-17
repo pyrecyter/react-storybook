@@ -1,3 +1,7 @@
+# What is this about
+
+React component library for custom Ant Design components using Storybook. Custom loader is added to load .less files in both main application (using craco) and storybook (less-loader). Also supports tsconfig in storybook.
+
 ## Available Scripts
 
 In the project directory, you can run:

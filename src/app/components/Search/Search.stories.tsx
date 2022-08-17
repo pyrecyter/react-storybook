@@ -1,4 +1,4 @@
-import Search from ".";
+import Search from "@app/components/Search";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import "../../../styles/global.less";
 import React from "react";
@@ -11,10 +11,6 @@ export default {
   },
 } as ComponentMeta<typeof Search>;
 
-const Template: ComponentStory<typeof Search> = (args) => (
-  <div>
-    <Search {...args} />
-  </div>
-);
+const Template: ComponentStory<typeof Search> = (args) => <Search {...args} />;
 
 export const Primary = Template.bind({});

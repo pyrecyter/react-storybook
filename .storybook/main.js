@@ -1,4 +1,6 @@
 const path = require("path");
+const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin");
+
 module.exports = {
   stories: ["../src/**/*.stories.mdx", "../src/**/*.stories.@(js|jsx|ts|tsx)"],
   addons: [
@@ -24,6 +26,7 @@ module.exports = {
     // 'PRODUCTION' is used when building the static version of storybook.
 
     // Make whatever fine-grained changes you need
+    config.resolve.plugins = [new TsconfigPathsPlugin()];
     config.module.rules.push({
       test: /\.less$/,
       use: [
