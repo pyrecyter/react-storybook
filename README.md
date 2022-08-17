@@ -2,6 +2,14 @@
 
 In the project directory, you can run:
 
+### `npm run storybook`
+
+Run the storybook in development mode.
+
+### `npm run build-storybook`
+
+Build the storybook for deployment.
+
 ### `npm start`
 
 Runs the app in the development mode.\
